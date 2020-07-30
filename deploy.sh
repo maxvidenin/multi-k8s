@@ -1,6 +1,6 @@
-docker build -t wetravel18/multi-client:latest wetravel18/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t wetravel18/multi-server:latest wetravel18/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t wetravel18/multi-worker:latest wetravel18/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t wetravel18/multi-client:latest -t wetravel18/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t wetravel18/multi-server:latest -t wetravel18/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t wetravel18/multi-worker:latest -t wetravel18/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push wetravel18/multi-client:latest
 docker push wetravel18/multi-server:latest
