@@ -1,5 +1,5 @@
 sudo: required
-servises:
+services:
   - docker
 env:
   global:
